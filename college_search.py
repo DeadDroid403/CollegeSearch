@@ -47,7 +47,7 @@ class CollegeSearch:
             self.collegesnames.append(name.partition('-')[-1])
 
     def clgfees(self):
-        td_tags = self.soup.find_all('td', class_='jsx-1948362374 col-fees')
+        td_tags = self.soup.find_all('td', class_='jsx-3749532717 col-fees')
         for i in td_tags:
             college_fees = i.find('a')
             if college_fees:
